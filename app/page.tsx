@@ -1,95 +1,47 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="view-container">
+      <header>
+        <h1>Tech Blog</h1>
+      </header>
+      <div className="view-body">
+        <p className="p">This is the technology blog.</p>
+        <section>
+          <h2>Content</h2>
+          <ul className="row list">
+            <li className="col s12 l6 xl3 card">
+              <section>
+                <h3>Basic Concepts</h3>
+                <p>Basic Concepts of software development, including programming languages, algorithms, data structures, and software design principles.</p>
+              </section>
+            </li>
+            <li className="col s12 l6 xl3 card">
+              <section>
+                <h3>Nodejs</h3>
+                <p>
+                  Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to build scalable network applications using
+                  JavaScript on the server side.
+                </p>
+              </section>
+            </li>
+            <li className="col s12 l6 xl3 card">
+              <section>
+                <h3>Frontend</h3>
+                <p>Frontend programming</p>
+              </section>
+            </li>
+            <li className="col s12 l6 xl3 card">
+              <section>
+                <h3>GO</h3>
+                <p>
+                  Go is an open-source programming language that makes it easy to build simple, reliable, and efficient software. It is designed for high
+                  performance and scalability, making it a popular choice for cloud computing and microservices architectures.
+                </p>
+              </section>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
-  );
+  )
 }
