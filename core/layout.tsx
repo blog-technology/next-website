@@ -24,33 +24,51 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                 </div>
                 <ul className="sub-list expanded">
                   <li>
-                    <a className="menu-item" href="/microservices">
-                      <i className="material-icons">mail</i>
-                      <span>Microservices</span>
+                    <a className="menu-item" href="/cluster">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Cluster</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/virtual-machine">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Virtual Machine</span>
                     </a>
                   </li>
                   <li>
                     <a className="menu-item" href="/docker">
-                      <i className="material-icons">mail</i>
+                      <i className="material-icons">credit_card</i>
                       <span>Docker</span>
                     </a>
                   </li>
                   <li>
                     <a className="menu-item" href="/kubernetes">
-                      <i className="material-icons">assignment</i>
+                      <i className="material-icons">credit_card</i>
                       <span>Kubernetes</span>
                     </a>
                   </li>
                   <li>
-                    <a className="menu-item" href="/rto-rpo-drp">
-                      <i className="material-icons">assignment</i>
-                      <span>RTO - RPO - DRP</span>
+                    <a className="menu-item" href="/cicd">
+                      <i className="material-icons">zoom_in</i>
+                      <span>CI/CD</span>
                     </a>
                   </li>
                   <li>
-                    <a className="menu-item" href="/reverse-proxy">
-                      <i className="material-icons">assignment</i>
-                      <span>Reverse Proxy</span>
+                    <a className="menu-item" href="/devops">
+                      <i className="material-icons">credit_card</i>
+                      <span>DevOps</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/devsecops">
+                      <i className="material-icons">credit_card</i>
+                      <span>DevSecOps</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/ldap">
+                      <i className="material-icons">zoom_in</i>
+                      <span>LDAP</span>
                     </a>
                   </li>
                   <li>
@@ -60,15 +78,84 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                     </a>
                   </li>
                   <li>
-                    <a className="menu-item" href="/devops">
-                      <i className="material-icons">assignment</i>
-                      <span>Devops</span>
+                    <a className="menu-item" href="/cdn">
+                      <i className="material-icons">zoom_in</i>
+                      <span>CDN</span>
                     </a>
                   </li>
                   <li>
-                    <a className="menu-item" href="/cloud">
+                    <a className="menu-item" href="/message-queue">
+                      <i className="material-icons">mail</i>
+                      <span>Message Queue</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/forward-proxy">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Forward Proxy</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/reverse-proxy">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Reverse Proxy</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/bcp-drp">
+                      <i className="material-icons">zoom_in</i>
+                      <span>BCP - DRP</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="open">
+                <div className="menu-item">
+                  <i className="material-icons">settings</i>
+                  <span>Design</span>
+                  <i className="entity-icon down"></i>
+                </div>
+                <ul className="sub-list expanded">
+                  <li>
+                    <a className="menu-item" href="/serverless">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Serverless</span>
+                    </a>
+                  </li>
+                  <li className="">
+                    <a className="menu-item" href="/soa">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Service Oriented Architecture (SOA)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/microservices">
                       <i className="material-icons">assignment</i>
-                      <span>Cloud</span>
+                      <span>Microservices</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/cqrs">
+                      <i className="material-icons">credit_card</i>
+                      <span>CQRS Architecture</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/event-driven-architecture">
+                      <i className="material-icons">mail</i>
+                      <span>Event Driven Architecture</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/event-sourcing-architecture">
+                      <i className="material-icons">credit_card</i>
+                      <span>Event Sourcing Architecture</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/microkernel-architecture">
+                      <i className="material-icons">credit_card</i>
+                      <span>Microkernel Architecture</span>
                     </a>
                   </li>
                 </ul>
@@ -81,15 +168,27 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                 </div>
                 <ul className="sub-list expanded">
                   <li>
-                    <a className="menu-item" href="/sql-injection">
-                      <i className="material-icons">assignment</i>
-                      <span>SQL Injection</span>
+                    <a className="menu-item" href="/owasp">
+                      <i className="material-icons">credit_card</i>
+                      <span>OWASP</span>
                     </a>
                   </li>
                   <li>
-                    <a className="menu-item" href="/waf-hips-fim-protection">
-                      <i className="material-icons">assignment</i>
+                    <a className="menu-item" href="/waf-hips-fim">
+                      <i className="material-icons">credit_card</i>
                       <span>WAF, HIPS, FIM Protection</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/hardening-va-scan-pentest">
+                      <i className="material-icons">credit_card</i>
+                      <span>Hardening Scan - VA Scan - Pentest</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/sql-injection">
+                      <i className="material-icons">assignment</i>
+                      <span>SQL Injection</span>
                     </a>
                   </li>
                   <li>
@@ -105,9 +204,9 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                     </a>
                   </li>
                   <li>
-                    <a className="menu-item" href="/remote-file-inclusion">
+                    <a className="menu-item" href="/file-inclusion">
                       <i className="material-icons">assignment</i>
-                      <span>Remote File Inclusion (RFI)</span>
+                      <span>File Inclusion</span>
                     </a>
                   </li>
                   <li>
@@ -117,15 +216,114 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                     </a>
                   </li>
                   <li>
-                    <a className="menu-item" href="/ransomware">
-                      <i className="material-icons">assignment</i>
+                    <a className="menu-item" href="/ransomware-attack">
+                      <i className="material-icons">credit_card</i>
                       <span>Ransomware Attack</span>
                     </a>
                   </li>
                   <li>
                     <a className="menu-item" href="/malware-virus-trojan-worms">
-                      <i className="material-icons">assignment</i>
+                      <i className="material-icons">credit_card</i>
                       <span>Malware, Virus, Trojan, Worms</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/mac-dac">
+                      <i className="material-icons">credit_card</i>
+                      <span>MAC - DAC</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/rbac">
+                      <i className="material-icons">assignment</i>
+                      <span>Role-Based Access Control (RBAC)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/maker-checker">
+                      <i className="material-icons">assignment</i>
+                      <span>Maker/Checker</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="open">
+                <div className="menu-item">
+                  <i className="material-icons">credit_card</i>
+                  <span>Golang</span>
+                  <i className="entity-icon down"></i>
+                </div>
+                <ul className="sub-list expanded">
+                  <li>
+                    <a className="menu-item" href="/go-syntax">
+                      <i className="material-icons">credit_card</i>
+                      <span>Go Syntax</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-developer-roadmap">
+                      <i className="material-icons">credit_card</i>
+                      <span>Go Developer Roadmap</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-interview-questions">
+                      <i className="material-icons">credit_card</i>
+                      <span>Go Interview Questions</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-project-layout">
+                      <i className="material-icons">assignment</i>
+                      <span>Go Project Layout</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-data-validation">
+                      <i className="material-icons">assignment</i>
+                      <span>Go Data Validation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-export-data">
+                      <i className="material-icons">assignment</i>
+                      <span>Go Export Data</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-import-data">
+                      <i className="material-icons">assignment</i>
+                      <span>Go Import Data</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-sql">
+                      <i className="material-icons">assignment</i>
+                      <span>Go SQL</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-sql-orm">
+                      <i className="material-icons">assignment</i>
+                      <span>Go ORM</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-mongo">
+                      <i className="material-icons">assignment</i>
+                      <span>Go Mongo</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-rest-api">
+                      <i className="material-icons">assignment</i>
+                      <span>Go REST API</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/go-grpc">
+                      <i className="material-icons">assignment</i>
+                      <span>GRPC</span>
                     </a>
                   </li>
                 </ul>
@@ -137,6 +335,24 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                   <i className="entity-icon down"></i>
                 </div>
                 <ul className="sub-list expanded">
+                  <li>
+                    <a className="menu-item" href="/node-project-layout">
+                      <i className="material-icons">assignment</i>
+                      <span>Node Project Layout</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/node-interview-questions">
+                      <i className="material-icons">assignment</i>
+                      <span>Node Interview Questions</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/node-developer-roadmap">
+                      <i className="material-icons">assignment</i>
+                      <span>Node Developer Roadmap</span>
+                    </a>
+                  </li>
                   <li>
                     <a className="menu-item" href="/node-data-validation">
                       <i className="material-icons">assignment</i>
@@ -216,63 +432,6 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                     <a className="menu-item" href="/vue">
                       <i className="material-icons">assignment</i>
                       <span>Vue</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li className="open">
-                <div className="menu-item">
-                  <i className="material-icons">mail</i>
-                  <span>Golang</span>
-                  <i className="entity-icon down"></i>
-                </div>
-                <ul className="sub-list expanded">
-                  <li>
-                    <a className="menu-item" href="/go-data-validation">
-                      <i className="material-icons">assignment</i>
-                      <span>Go Data Validation</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="menu-item" href="/go-export-data">
-                      <i className="material-icons">assignment</i>
-                      <span>Go Export Data</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="menu-item" href="/go-import-data">
-                      <i className="material-icons">assignment</i>
-                      <span>Go Import Data</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="menu-item" href="/go-sql">
-                      <i className="material-icons">assignment</i>
-                      <span>Go SQL</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="menu-item" href="/go-sql-orm">
-                      <i className="material-icons">assignment</i>
-                      <span>Go ORM</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="menu-item" href="/go-mongo">
-                      <i className="material-icons">assignment</i>
-                      <span>Go Mongo</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="menu-item" href="/go-rest-api">
-                      <i className="material-icons">assignment</i>
-                      <span>Go REST API</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="menu-item" href="/go-grpc">
-                      <i className="material-icons">assignment</i>
-                      <span>GRPC</span>
                     </a>
                   </li>
                 </ul>

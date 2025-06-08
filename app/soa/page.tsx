@@ -48,24 +48,24 @@ export default function Page() {
 <p>In an e-commerce platform:</p>
 <ul>
 <li><b>Order Service</b>: Handles placing and tracking orders.</li>
-<li><b>Inventory Service</b>: Manages product stock. </li>
-<li><b>User Service</b>: Handles registration and login. </li>
+<li><b>Inventory Service</b>: Manages product stock.</li>
+<li><b>User Service</b>: Handles registration and login.</li>
 <li><b>Payment Service</b>: Processes payments.</li>
 </ul>
 <p>Each service exposes a public API, and they can all communicate through a shared messaging system or direct HTTP calls.</p>
 <h3>✅ Benefits</h3>
 <ul>
-<li><b> Scalability</b>: Each service can scale independently. </li>
-<li><b> Flexibility</b>: Technology- <b>agnostic (you can use Java for one service and Go for another). </li>
-<li><b> Maintainability</b>: Easier to update or replace individual services. </li>
-<li><b> Reusability</b>: Services can be reused across different applications or teams.</li>
+<li><b>Scalability</b>: Each service can scale independently.</li>
+<li><b>Flexibility</b>: Technology-agnostic (you can use Java for one service and Go for another).</li>
+<li><b>Maintainability</b>: Easier to update or replace individual services.</li>
+<li><b>Reusability</b>: Services can be reused across different applications or teams.</li>
 </ul>
 <h3>⚠️ Challenges</h3>
 <ul>
-<li><b> Complexity</b>: More moving parts mean more overhead in communication, monitoring, and deployment.</li>
-<li><b> Latency</b>: Network communication introduces delays. </li>
-<li><b> Data Management</b>: Managing consistency across services can be hard. </li>
-<li><b> Security</b>: More surface area to secure due to multiple APIs.</li>
+<li><b>Complexity</b>: More moving parts mean more overhead in communication, monitoring, and deployment.</li>
+<li><b>Latency</b>: Network communication introduces delays.</li>
+<li><b>Data Management</b>: Managing consistency across services can be hard.</li>
+<li><b>Security</b>: More surface area to secure due to multiple APIs.</li>
 </ul>
 <h3>🔄 SOA vs Microservices</h3>
 <table><thead><tr>
@@ -102,8 +102,8 @@ export default function Page() {
 
 <h3>📌 Use SOA When:</h3>
 <ul>
-<li>You&#39;re building a large enterprise system that needs integration across departments or legacy systems. </li>
-<li>You want to reuse services across multiple applications. </li>
+<li>You&#39;re building a large enterprise system that needs integration across departments or legacy systems.</li>
+<li>You want to reuse services across multiple applications.</li>
 <li>You require robust governance and standards across teams or organizations.</li>
 </ul>
 </article>
