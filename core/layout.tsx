@@ -24,6 +24,36 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                 </div>
                 <ul className="sub-list expanded">
                   <li>
+                    <a className="menu-item" href="/cloud">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Cloud</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/cloud-services">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Cloud Services</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/serverless">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Serverless</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/cdn">
+                      <i className="material-icons">zoom_in</i>
+                      <span>CDN</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/three-tier-application">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Three-tier application</span>
+                    </a>
+                  </li>
+                  <li>
                     <a className="menu-item" href="/cluster">
                       <i className="material-icons">zoom_in</i>
                       <span>Cluster</span>
@@ -78,12 +108,6 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                     </a>
                   </li>
                   <li>
-                    <a className="menu-item" href="/cdn">
-                      <i className="material-icons">zoom_in</i>
-                      <span>CDN</span>
-                    </a>
-                  </li>
-                  <li>
                     <a className="menu-item" href="/message-queue">
                       <i className="material-icons">mail</i>
                       <span>Message Queue</span>
@@ -117,12 +141,30 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                 </div>
                 <ul className="sub-list expanded">
                   <li>
-                    <a className="menu-item" href="/serverless">
+                    <a className="menu-item" href="/layer-architecture">
                       <i className="material-icons">zoom_in</i>
-                      <span>Serverless</span>
+                      <span>Layer Architecture</span>
                     </a>
                   </li>
-                  <li className="">
+                  <li>
+                    <a className="menu-item" href="/hexagonal-architecture">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Hexagonal Architecture</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/clean-architecture">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Clean Architecture</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/onion-architecture">
+                      <i className="material-icons">zoom_in</i>
+                      <span>Onion Architecture</span>
+                    </a>
+                  </li>
+                  <li>
                     <a className="menu-item" href="/soa">
                       <i className="material-icons">zoom_in</i>
                       <span>Service Oriented Architecture (SOA)</span>
@@ -171,6 +213,18 @@ export default function LayoutPage({ children }: { children: React.ReactNode }) 
                     <a className="menu-item" href="/owasp">
                       <i className="material-icons">credit_card</i>
                       <span>OWASP</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/soc-2-type-ii">
+                      <i className="material-icons">credit_card</i>
+                      <span>SOC 2 Type II</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a className="menu-item" href="/soc-2-type-ii-checklist">
+                      <i className="material-icons">credit_card</i>
+                      <span>SOC 2 Type II Checklist</span>
                     </a>
                   </li>
                   <li>
