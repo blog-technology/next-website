@@ -22,9 +22,9 @@ export default function Page() {
 </ul>
 <h3>✨ Benefits</h3>
 <ul>
-<li><b>Scalability</b>: Read and write workloads can be scaled independently. </li>
-<li><b>Flexibility</b>: Query model can be tailored for read performance without affecting write logic. </li>
-<li><b>Separation of Concerns</b>: Clear distinction between how data is changed and how it is retrieved. </li>
+<li><b>Scalability</b>: Read and write workloads can be scaled independently.</li>
+<li><b>Flexibility</b>: Query model can be tailored for read performance without affecting write logic.</li>
+<li><b>Separation of Concerns</b>: Clear distinction between how data is changed and how it is retrieved.</li>
 <li><b>Optimized Performance</b>: Read models can be denormalized and indexed for specific queries.</li>
 </ul>
 <h3>⚠️ Trade-offs</h3>
@@ -36,13 +36,13 @@ export default function Page() {
 <h3>🔧 When to Use CQRS</h3>
 <p>✅ Consider CQRS if:</p>
 <ul>
-<li>Your app has complex business logic and performance issues with queries. </li>
-<li>You need to scale reads and writes independently. </li>
+<li>Your app has complex business logic and performance issues with queries.</li>
+<li>You need to scale reads and writes independently.</li>
 <li>You&#39;re implementing Domain-Driven Design (DDD) in a large system.</li>
 </ul>
 <p>🚫 Avoid CQRS if:</p>
 <ul>
-<li>The domain is simple and CRUD fits well. </li>
+<li>The domain is simple and CRUD fits well.</li>
 <li>The overhead outweighs the benefits.</li>
 </ul>
 </article>

@@ -9,33 +9,27 @@ export default function Page() {
 <th>DevOps</th>
 <th>DevSecOps</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Focus</td>
 <td>Speed, automation, collaboration</td>
 <td>Same goals, but with built-in security</td>
 </tr>
-
 <tr>
 <td>Security Role</td>
 <td>Often handled late or separately</td>
 <td>Shift-left security: apply early in development</td>
 </tr>
-
 <tr>
 <td>Tooling</td>
 <td>CI/CD, containers, IaC, etc.</td>
 <td>Adds SAST, SCA, DAST, secrets scanning, etc.</td>
 </tr>
-
 <tr>
 <td>Responsibility</td>
 <td>Mostly Dev and Ops</td>
 <td>Everyone shares security responsibility</td>
 </tr>
-
 </tbody></table>
-
 <h3>🔁 DevSecOps Lifecycle Example</h3>
 <p><img src="https://cdn-images-1.medium.com/max/800/1*aBhZHYPRLQy8vDOguesttA.png" alt="DevSecOps Lifecycle Example"/></p>
 <h3>🛠️ Common DevSecOps Practices</h3>
@@ -60,9 +54,9 @@ export default function Page() {
 </ul>
 <h3>✅ Benefits of DevSecOps</h3>
 <ul>
-<li>Security by design </li>
-<li>Faster, safer releases </li>
-<li>Reduced costs from fixing bugs early </li>
+<li>Security by design</li>
+<li>Faster, safer releases</li>
+<li>Reduced costs from fixing bugs early</li>
 <li>Culture of shared responsibility</li>
 </ul>
 <h3>🔁 DevSecOps in CI/CD Pipeline</h3>
@@ -73,45 +67,37 @@ export default function Page() {
 <th>Security Practice</th>
 <th>Tool Example</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Code Commit</td>
 <td>Pre-commit hooks, secrets scan</td>
 <td>git-secrets, pre-commit</td>
 </tr>
-
 <tr>
 <td>CI Build</td>
 <td>SAST + SCA</td>
 <td>SonarQube, Coverity + Snyk, Black Duck, Dependabot</td>
 </tr>
-
 <tr>
 <td>Build Container</td>
 <td>Image scanning</td>
 <td>Snyk Container, Prisma, Grype, Clair</td>
 </tr>
-
 <tr>
 <td>CI Test</td>
 <td>DAST, API fuzzing</td>
 <td>OWASP ZAP, Burp Suite, Postman</td>
 </tr>
-
 <tr>
 <td>CD Deploy</td>
 <td>Policy as Code</td>
 <td>OPA, Kyverno, Kube-bench</td>
 </tr>
-
 <tr>
 <td>Runtime Monitoring</td>
 <td>Threat detection, anomaly</td>
 <td>Prometheus, Grafana, Falco</td>
 </tr>
-
 </tbody></table>
-
 <h3>🆚 SAST vs. SCA vs. DAST</h3>
 <table><thead><tr>
 <th>Type</th>
@@ -119,30 +105,25 @@ export default function Page() {
 <th>Code Access?</th>
 <th>Example</th>
 </tr></thead><tbody>
-
 <tr>
 <td>SAST</td>
 <td>Source code vulnerabilities</td>
 <td>✅ Yes</td>
 <td>SonarQube, Coverity, Checkmarx</td>
 </tr>
-
 <tr>
 <td>SCA</td>
 <td>Dependency vulnerabilities</td>
 <td>✅/❌ Partial</td>
 <td>Snyk, Black Duck, OWASP Dependency-Check)</td>
 </tr>
-
 <tr>
 <td>DAST</td>
 <td>Runtime behavior</td>
 <td>❌ No</td>
 <td>OWASP ZAP, Burp Suite</td>
 </tr>
-
 </tbody></table>
-
 <h2>Security Gate</h2>
 <p>In DevSecOps, a security gate is a checkpoint or control mechanism in the software development pipeline that enforces security policies before allowing code or artifacts to proceed to the next stage of the development or deployment process.</p>
 <h3>Purpose of a Security Gate</h3>
@@ -159,14 +140,14 @@ export default function Page() {
 <h3>How It Works</h3>
 <p>A security gate can:</p>
 <ul>
-<li>Fail a build or block a deployment if issues are found. </li>
-<li>Require manual approval for exceptions or overrides. </li>
+<li>Fail a build or block a deployment if issues are found.</li>
+<li>Require manual approval for exceptions or overrides.</li>
 <li>Integrate with CI/CD tools (e.g., Jenkins, GitHub Actions, GitLab CI/CD).</li>
 </ul>
 <h3>Benefits</h3>
 <ul>
-<li>Automated enforcement of security policies. </li>
-<li>Shift-left security, catching issues early and cheaply. </li>
+<li>Automated enforcement of security policies.</li>
+<li>Shift-left security, catching issues early and cheaply.</li>
 <li>Reduced risk of vulnerabilities reaching production.</li>
 </ul>
 <h3>Summary</h3>
@@ -178,82 +159,69 @@ export default function Page() {
 <th>SonarQube</th>
 <th>Coverity (by Synopsys)</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Purpose</td>
 <td>Code quality, maintainability, minor security</td>
 <td>Security-focused (SAST), serious defects and vulnerabilities</td>
 </tr>
-
 <tr>
 <td>Primary Focus</td>
 <td>Code smells, bugs, style, coverage</td>
 <td>Deep security vulnerabilities, data flow, taint analysis</td>
 </tr>
-
 <tr>
 <td>Type</td>
 <td>Static Code Analysis + Code Quality</td>
 <td>SAST (Static Application Security Testing)</td>
 </tr>
-
 <tr>
 <td>Security Coverage</td>
 <td>OWASP Top 10 (surface-level), security hotspots</td>
 <td>OWASP Top 10, CWE, CERT, deep analysis (memory, input flow)</td>
 </tr>
-
 <tr>
 <td>Languages Supported</td>
 <td>30+ (Java, JavaScript, Typescript, Go, C#, Python, etc.)</td>
 <td>Focus on C, C++, Java, JavaScript, Go, C#, Python, etc.</td>
 </tr>
-
 <tr>
 <td>Accuracy (False Positives)</td>
 <td>Moderate — more for guidance</td>
 <td>Low — aims for high precision and actionable findings</td>
 </tr>
-
 <tr>
 <td>Severity Detection</td>
 <td>Mostly code health and maintainability</td>
 <td>Security-critical issues like buffer overflows, race conditions</td>
 </tr>
-
 <tr>
 <td>CI/CD Integration</td>
 <td>Jenkins, GitHub, GitLab, Azure, etc.</td>
 <td>Jenkins, GitLab, GitHub, Coverity Connect/Server</td>
 </tr>
-
 <tr>
 <td>Developer-Friendly</td>
 <td>✅ Very developer-friendly UI and feedback</td>
 <td>❌ More complex setup, often used by security teams</td>
 </tr>
-
 <tr>
 <td>Open Source Version</td>
 <td>✅ Community edition available</td>
 <td>❌ Fully commercial</td>
 </tr>
-
 <tr>
 <td>Ideal For</td>
 <td>Developers improving code quality in DevOps</td>
 <td>Security teams performing deep vulnerability detection</td>
 </tr>
-
 </tbody></table>
-
 <h3>🔍 Summary of Use Cases</h3>
 <ul>
-<li><b>SonarQube</b>: Detecting bugs, code smells, enforcing code standards early </li>
+<li><b>SonarQube</b>: Detecting bugs, code smells, enforcing code standards early</li>
 <li><b>Coverity</b>: Detecting serious security flaws and complex logic vulnerabilities</li>
 </ul>
 <h3>🧩 Where They Fit in a DevSecOps Pipeline</h3>
-<pre><code className="language-plaintext">{`Code → Build →
+<pre className="line-numbers"><code className="language-plaintext">{`Code → Build →
         ├── ✅ SonarQube: Quick feedback for developers (style, smells, coverage)
         └── 🔒 Coverity: Deep security vulnerability detection before merge/release`}</code></pre><h3>✅ When to Use Both</h3>
 <p>Many enterprises use SonarQube + Coverity together:</p>

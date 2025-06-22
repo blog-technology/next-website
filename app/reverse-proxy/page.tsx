@@ -43,18 +43,18 @@ export default function Page() {
 </ul>
 <h3>🛠 Examples of Reverse Proxies</h3>
 <ul>
-<li>Nginx </li>
+<li>Nginx</li>
 <li>Apache HTTP Server (with mod_proxy)</li>
-<li>HAProxy </li>
-<li>Traefik </li>
+<li>HAProxy</li>
+<li>Traefik</li>
 <li>Caddy</li>
 </ul>
 <h3>📈 Example Scenario</h3>
 <p>Imagine a client requests <a href="https://example.com/api/users">https://example.com/api/users</a>.</p>
 <ul>
-<li>The request goes to an Nginx reverse proxy. </li>
-<li>Nginx checks routing rules and forwards the request to <a href="http://internal-api-server:8080/users">http://internal-api-server:8080/users</a>. </li>
-<li>The internal server processes the request and returns the result. </li>
+<li>The request goes to an Nginx reverse proxy.</li>
+<li>Nginx checks routing rules and forwards the request to <a href="http://internal-api-server:8080/users">http://internal-api-server:8080/users</a>.</li>
+<li>The internal server processes the request and returns the result.</li>
 <li>Nginx sends the result back to the client.</li>
 </ul>
 <p>The client never knows the internal structure or address of the API server.</p>

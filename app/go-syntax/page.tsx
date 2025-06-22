@@ -17,7 +17,7 @@ export default function Page() {
 </ul>
 </li>
 </ul>
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -36,14 +36,11 @@ func main() {
 </li>
 </ul>
 <table><thead><tr><td>
-
 <p><a href="https://go.dev/tour/basics/5">Return 1 value</a></p>
 </td><td>
-
 <p><a href="https://go.dev/tour/basics/6">Return 2 values</a></p>
 </td></tr></thead><tbody><tr><td>
-
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -55,8 +52,7 @@ func main() {
   fmt.Println(add(42, 13))
 }`}</code></pre></td>
 <td>
-
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -68,7 +64,6 @@ func main() {
   a, b := swap("hello", "world")
   fmt.Println(a, b)
 }`}</code></pre></td></tr></tbody></table>
-
 <h4>Variables</h4>
 <p>Declare variables</p>
 <ul>
@@ -82,14 +77,11 @@ func main() {
 </li>
 </ul>
 <table><thead><tr><td>
-
 <p><a href="https://go.dev/tour/basics/8">Use var</a></p>
 </td><td>
-
 <p><a href="https://go.dev/tour/basics/10">Use short variables declarations</a></p>
 </td></tr></thead><tbody><tr><td>
-
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -100,8 +92,7 @@ func main() {
   fmt.Println(i, c, python, java)
 }`}</code></pre></td>
 <td>
-
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -112,7 +103,6 @@ func main() {
 
   fmt.Println(i, j, k, c, python, java)
 }`}</code></pre></td></tr></tbody></table>
-
 <h4>Convert type</h4>
 <ul>
 <li>Use expression T(v) to convert some number<ul>
@@ -120,7 +110,7 @@ func main() {
 </ul>
 </li>
 </ul>
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import (
     "fmt"
@@ -145,14 +135,11 @@ func main() {
 </li>
 </ul>
 <table><thead><tr><td>
-
 <p><a href="https://go.dev/tour/flowcontrol/1">For loop</a></p>
 </td><td>
-
 <p><a href="https://go.dev/tour/flowcontrol/3">while is spelled for in Go</a></p>
 </td></tr></thead><tbody><tr><td>
-
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -164,8 +151,7 @@ func main() {
   fmt.Println(sum)
 }`}</code></pre></td>
 <td>
-
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -176,7 +162,6 @@ func main() {
   }
   fmt.Println(sum)
 }`}</code></pre></td></tr></tbody></table>
-
 <h4>Defer</h4>
 <p>A defer statement defers the execution of a function until the surrounding function return</p>
 <ul>
@@ -185,7 +170,7 @@ func main() {
 </ul>
 </li>
 </ul>
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -201,7 +186,7 @@ func main() {
 </ul>
 </li>
 </ul>
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -223,7 +208,7 @@ func main() {
 </ul>
 </li>
 </ul>
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -249,14 +234,11 @@ func main() {
 </li>
 </ul>
 <table><thead><tr><td>
-
 <p><a href="https://go.dev/tour/moretypes/7">Print 1 slice</a></p>
 </td><td>
-
 <p><a href="https://go.dev/tour/moretypes/13">Print 4 slices</a></p>
 </td></tr></thead><tbody><tr><td>
-
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -267,8 +249,7 @@ func main() {
   fmt.Println(s, primes)
 }`}</code></pre></td>
 <td>
-
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -290,7 +271,6 @@ func printSlice(s string, x []int) {
   fmt.Printf("%s len=%d cap=%d %v\n",
     s, len(x), cap(x), x)
 }`}</code></pre></td></tr></tbody></table>
-
 <h4>Range</h4>
 <p>The range form of the for loop iterates over a slice or map</p>
 <ul>
@@ -299,7 +279,7 @@ func printSlice(s string, x []int) {
 </ul>
 </li>
 </ul>
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import "fmt"
 
@@ -317,7 +297,7 @@ func main() {
 </ul>
 </li>
 </ul>
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import (
     "fmt"
@@ -343,7 +323,7 @@ func main() {
 </ul>
 </li>
 </ul>
-<pre><code className="language-go">{`package main
+<pre className="line-numbers"><code className="language-go">{`package main
 
 import (
     "fmt"

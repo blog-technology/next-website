@@ -14,20 +14,20 @@ export default function Page() {
 </ul>
 <h3>📚 Common LDAP implementations:</h3>
 <ul>
-<li>Microsoft Active Directory </li>
-<li>OpenLDAP </li>
-<li>389 Directory Server </li>
+<li>Microsoft Active Directory</li>
+<li>OpenLDAP</li>
+<li>389 Directory Server</li>
 <li>Apache Directory Server</li>
 </ul>
 <h3>🧾 Example LDAP data</h3>
 <p>LDAP data is hierarchical and resembles a directory tree:</p>
-<pre><code className="language-bash">{`dc=microsoft,dc=com
+<pre className="line-numbers"><code className="language-bash">{`dc=microsoft,dc=com
  └── ou=users
       ├── cn=alice
       └── cn=bob`}</code></pre><p>Explanation:</p>
 <ul>
-<li>dc = domain component </li>
-<li>ou = organizational unit </li>
+<li>dc = domain component</li>
+<li>ou = organizational unit</li>
 <li>cn = common name (a user or entity)</li>
 </ul>
 <h3>🛠️ Typical Use Case</h3>
@@ -39,9 +39,9 @@ export default function Page() {
 </ol>
 <h3>🔑 Key Concepts</h3>
 <ul>
-<li><b>Bind</b>: Login to the LDAP server. </li>
-<li><b>Search</b>: Look up entries (e.g., find a user). </li>
-<li><b>DN (Distinguished Name)</b>: Unique identifier for an LDAP entry. </li>
+<li><b>Bind</b>: Login to the LDAP server.</li>
+<li><b>Search</b>: Look up entries (e.g., find a user).</li>
+<li><b>DN (Distinguished Name)</b>: Unique identifier for an LDAP entry.</li>
 <li><b>Attributes</b>: Key-value pairs stored with each entry (e.g., email, phone).</li>
 </ul>
 </article>

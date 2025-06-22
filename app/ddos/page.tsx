@@ -5,16 +5,16 @@ export default function Page() {
 <h3>💥 What is a DDoS Attack?</h3>
 <p>A DDoS (Distributed Denial of Service) attack:</p>
 <ul>
-<li>Originates from many devices (often thousands or millions), typically compromised machines forming a botnet. </li>
-<li>Sends huge volumes of traffic (requests, packets, connections) to a target system. </li>
+<li>Originates from many devices (often thousands or millions), typically compromised machines forming a botnet.</li>
+<li>Sends huge volumes of traffic (requests, packets, connections) to a target system.</li>
 <li>Goal: Crash the service or exhaust resources (bandwidth, memory, CPU), causing downtime.</li>
 </ul>
 <h3>🎯 Goals of a DDoS Attack</h3>
 <ul>
-<li>Knock websites or services offline (e.g., e-commerce, banking). </li>
-<li>Hurt reputation or revenue. </li>
-<li>Distract security teams (while performing another attack). </li>
-<li>Harass or extort money (ransom DDoS). </li>
+<li>Knock websites or services offline (e.g., e-commerce, banking).</li>
+<li>Hurt reputation or revenue.</li>
+<li>Distract security teams (while performing another attack).</li>
+<li>Harass or extort money (ransom DDoS).</li>
 <li>Make a political or ideological statement.</li>
 </ul>
 <h3>🛡️ What is DDoS protection?</h3>
@@ -43,30 +43,25 @@ export default function Page() {
 <th>Example</th>
 <th>Layer</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Volumetric</td>
 <td>Bandwidth</td>
 <td>UDP floods, ICMP floods</td>
 <td>L3/L4</td>
 </tr>
-
 <tr>
 <td>Protocol Attacks</td>
 <td>Network stack</td>
 <td>SYN flood, Ping of Death</td>
 <td>L3/L4</td>
 </tr>
-
 <tr>
 <td>Application Layer (Layer 7)</td>
 <td>Web apps</td>
 <td>HTTP GET/POST floods</td>
 <td>L7</td>
 </tr>
-
 </tbody></table>
-
 <p>✅ Best Practices</p>
 <ul>
 <li>Use a reverse proxy (e.g., Cloudflare, AWS ALB) to hide your real IP.</li>

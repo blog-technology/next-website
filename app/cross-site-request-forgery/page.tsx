@@ -10,12 +10,12 @@ export default function Page() {
 <ol>
 <li>User logs into bank.com and has a valid session cookie.</li>
 <li>User visits an attacker-controlled website.</li>
-<li>That site submits a hidden request to bank.com/transfer?to=attacker&amp;amount=1000. </li>
+<li>That site submits a hidden request to bank.com/transfer?to=attacker&amp;amount=1000.</li>
 <li>Because the user is authenticated, the request is accepted.</li>
 </ol>
 <h3>💡 Example</h3>
 <p>A malicious site includes this:</p>
-<pre><code className="language-html">{`<img src="https://bank.com/transfer?to=attacker&amount=1000" style="display:none" />`}</code></pre><p>When the logged-in user loads this page, their browser sends the request — including session cookies — to the bank.</p>
+<pre className="line-numbers"><code className="language-html">{`<img src="https://bank.com/transfer?to=attacker&amount=1000" style="display:none" />`}</code></pre><p>When the logged-in user loads this page, their browser sends the request — including session cookies — to the bank.</p>
 <h3>🛡️ How to Prevent CSRF</h3>
 <ul>
 <li><b>CSRF Tokens</b>: Generate a unique token per form/request. Server checks this token before processing.</li>
@@ -30,37 +30,31 @@ export default function Page() {
 <th>CSRF</th>
 <th>XSS</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Attacks the user or session</td>
 <td>✅</td>
 <td>✅</td>
 </tr>
-
 <tr>
 <td>Requires user to be authenticated</td>
 <td>✅</td>
 <td>❌ (often not required)</td>
 </tr>
-
 <tr>
 <td>Exploits trust of site in the user</td>
 <td>✅</td>
 <td>❌</td>
 </tr>
-
 <tr>
 <td>Exploits trust of user in the site</td>
 <td>❌</td>
 <td>✅</td>
 </tr>
-
 <tr>
 <td>Usually does not require script injection</td>
 <td>✅</td>
 <td>❌</td>
 </tr>
-
 </tbody></table></article>
   )
 }

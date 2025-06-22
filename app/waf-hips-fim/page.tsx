@@ -57,28 +57,24 @@ export default function Page() {
 <th>Protects Against</th>
 <th>Where It Operates</th>
 </tr></thead><tbody>
-
 <tr>
 <td><b>WAF</b></td>
 <td>Web Application Firewall</td>
 <td>Web attacks (SQLi, XSS, etc.)</td>
 <td>HTTP/HTTPS traffic (App)</td>
 </tr>
-
 <tr>
 <td><b>HIPS</b></td>
 <td>Host-based Intrusion Prevention</td>
 <td>Exploits, malware on host</td>
 <td>Host OS (kernel/user)</td>
 </tr>
-
 <tr>
 <td><b>FIM</b></td>
 <td>File Integrity Monitoring</td>
 <td>Unauthorized file/config changes</td>
 <td>File system monitoring</td>
 </tr>
-
 </tbody></table>
 </article>
   )

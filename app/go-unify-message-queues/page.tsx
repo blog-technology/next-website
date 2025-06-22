@@ -42,7 +42,7 @@ export default function Page() {
 </ul>
 <h3>Proposed Standardized Interface</h3>
 <h4>Publishing A Message</h4>
-<pre><code className="language-go">{`type Publisher interface {
+<pre className="line-numbers"><code className="language-go">{`type Publisher interface {
   PublishData(ctx context.Context, data []byte) error
   Publish(ctx context.Context, data []byte, attributes map[string]string) error
   PublishMessage(ctx context.Context, message pubsub.Message) (string, error)
@@ -55,9 +55,9 @@ export default function Page() {
 <ul>
 <li>Move all MQ technical parameters like delay-seconds, count-threshold, and byte-threshold to the infrastructure layer, to keep the business logic clean.</li>
 <li>Remove all unused parameters, such as PublishTime, DeliveryAttempt when publishing the message</li>
-<li>Just keep the meaningful parameters. In the above interace, you see 2 clean methods, which can serve 95% the cases:<pre><code className="language-go">{`PublishData(ctx context.Context, data []byte) error
+<li>Just keep the meaningful parameters. In the above interace, you see 2 clean methods, which can serve 95% the cases:<pre className="line-numbers"><code className="language-go">{`PublishData(ctx context.Context, data []byte) error
 Publish(ctx context.Context, data []byte, attributes map[string]string) error`}</code></pre></li>
-<li><b>To allow developers to access to advanced features</b>, we keep the native method:<pre><code className="language-go">{`PublishMessage(ctx context.Context, message pubsub.Message) (string, error)`}</code></pre></li>
+<li><b>To allow developers to access to advanced features</b>, we keep the native method:<pre className="line-numbers"><code className="language-go">{`PublishMessage(ctx context.Context, message pubsub.Message) (string, error)`}</code></pre></li>
 </ul>
 <h4>Subscribe A Message</h4>
 <p>I observe these 9 libraries of 7 message queues below:</p>
@@ -73,14 +73,14 @@ Publish(ctx context.Context, data []byte, attributes map[string]string) error`}<
 <li><a href="https://github.com/nats-io/nats.go">https://github.com/nats-io/nats.go</a> (NATS)</li>
 </ul>
 <p>After analyzed 9 libraries of 7 message queues, I see interface of Google Pub/Sub is simple, easy to use. So, I propose this interface:</p>
-<pre><code className="language-go">{`type Subscriber interface {
+<pre className="line-numbers"><code className="language-go">{`type Subscriber interface {
   SubscribeData(context.Context, func(context.Context, []byte))
   Subscribe(context.Context, func(context.Context, []byte, map[string]string))
   SubscribeMessage(context.Context, func(context.Context, *pubsub.Message))
 }`}</code></pre><ul>
-<li>To keep the meaningful input parameters, I keep 2 clean methods, which can serve 95% the cases:<pre><code className="language-go">{`SubscribeData(context.Context, func(context.Context, []byte))
+<li>To keep the meaningful input parameters, I keep 2 clean methods, which can serve 95% the cases:<pre className="line-numbers"><code className="language-go">{`SubscribeData(context.Context, func(context.Context, []byte))
 Subscribe(context.Context, func(context.Context, []byte, map[string]string))`}</code></pre></li>
-<li>To allow developers to access to advanced features, we keep the native method:<pre><code className="language-go">{`SubscribeMessage(context.Context, func(context.Context, *pubsub.Message))`}</code></pre></li>
+<li>To allow developers to access to advanced features, we keep the native method:<pre className="line-numbers"><code className="language-go">{`SubscribeMessage(context.Context, func(context.Context, *pubsub.Message))`}</code></pre></li>
 </ul>
 <p><b>Summary</b>
 With the above 2 interfaces, I can standardize the message queues, with clean business:</p>
@@ -90,7 +90,7 @@ With the above 2 interfaces, I can standardize the message queues, with clean bu
 <li>For some cases, we need to use the header. So, we keep 1 method to send/consume the body with header map[string]string. &#39;map[string]string&#39; allow the interfaces not to depend any 3rd party library.</li>
 <li>Keep 1 method to handle the native library, to Access to Advanced Features.</li>
 </ul>
-<p>If you do not like the above method names: SubscribeData, Subscribe, SubscribeMessage, in GOLANG, we have a solution for it. GOLANG allows higher-order functions, like Javascript, where you can pass one function to another, use it as a callback. You can create a new instance, and pass the method/function as the parameter. Inside the business layer, you can use the method name you want. </p>
+<p>If you do not like the above method names: SubscribeData, Subscribe, SubscribeMessage, in GOLANG, we have a solution for it. GOLANG allows higher-order functions, like Javascript, where you can pass one function to another, use it as a callback. You can create a new instance, and pass the method/function as the parameter. Inside the business layer, you can use the method name you want.</p>
 <h3>Available Examples:</h3>
 <p>I and my team, we standardize 9 GO libraries, of 7 message queues, and created these 9 samples. You can refer to these examples and see how easy to use:</p>
 <h4>RabbitMQ</h4>

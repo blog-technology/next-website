@@ -7,8 +7,8 @@ export default function Page() {
 <p>When a web application does not properly validate or escape user input, an attacker can inject malicious JavaScript into the application. This script runs in the context of the victim’s browser, allowing the attacker to:</p>
 <ul>
 <li>Steal cookies or session tokens.</li>
-<li>Redirect users to malicious sites. </li>
-<li>Deface webpages. </li>
+<li>Redirect users to malicious sites.</li>
+<li>Deface webpages.</li>
 <li>Perform actions on behalf of the user (e.g., sending messages, changing settings).</li>
 </ul>
 <h3>🎯 Types of XSS</h3>
@@ -19,7 +19,7 @@ export default function Page() {
 </ul>
 <h3>🔐 Example of Reflected XSS</h3>
 <p>Suppose a website echoes back user input in the URL:</p>
-<pre><code className="language-php">{`https://example.com/search?q=<script>alert('XSS')</script>`}</code></pre><p>If the site renders that input directly into the page without escaping it, the JavaScript will execute in the browser.</p>
+<pre className="line-numbers"><code className="language-php">{`https://example.com/search?q=<script>alert('XSS')</script>`}</code></pre><p>If the site renders that input directly into the page without escaping it, the JavaScript will execute in the browser.</p>
 <h3>🛡️ How to Prevent XSS</h3>
 <ul>
 <li>Escape output: Convert characters like &lt;, &gt;, &quot;, &#39; to HTML entities when rendering user input.</li>
@@ -34,37 +34,31 @@ export default function Page() {
 <th>CSRF</th>
 <th>XSS</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Attacks the user or session</td>
 <td>✅</td>
 <td>✅</td>
 </tr>
-
 <tr>
 <td>Requires user to be authenticated</td>
 <td>✅</td>
 <td>❌ (often not required)</td>
 </tr>
-
 <tr>
 <td>Exploits trust of site in the user</td>
 <td>✅</td>
 <td>❌</td>
 </tr>
-
 <tr>
 <td>Exploits trust of user in the site</td>
 <td>❌</td>
 <td>✅</td>
 </tr>
-
 <tr>
 <td>Usually does not require script injection</td>
 <td>✅</td>
 <td>❌</td>
 </tr>
-
 </tbody></table></article>
   )
 }

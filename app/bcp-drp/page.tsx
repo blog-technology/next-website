@@ -43,39 +43,32 @@ export default function Page() {
 <th>BCP</th>
 <th>DRP</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Focus</td>
 <td>Business operations</td>
 <td>IT systems & data recovery</td>
 </tr>
-
 <tr>
 <td>Scope</td>
 <td>Organization-wide</td>
 <td>Technology-specific</td>
 </tr>
-
 <tr>
 <td>Goal</td>
 <td>Ensure business continuity</td>
 <td>Resume IT functions</td>
 </tr>
-
 <tr>
 <td>Strategy Type</td>
 <td>Operational and procedural</td>
 <td>Technical</td>
 </tr>
-
 <tr>
 <td>Trigger Events</td>
 <td>Any disruption (cyber, supply)</td>
 <td>IT/data-related disasters</td>
 </tr>
-
 </tbody></table>
-
 <h2>🧪 Example Scenario</h2>
 <p>Disaster: Ransomware attack hits your company.</p>
 <h3>🧰 BCP ensures:</h3>
@@ -95,34 +88,27 @@ export default function Page() {
 <th>BCP Includes</th>
 <th>DRP Includes</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Risk Assessment</td>
 <td>Backup and Restore Strategy</td>
 </tr>
-
 <tr>
 <td>Business Impact Analysis</td>
 <td>Disaster Recovery Sites</td>
 </tr>
-
 <tr>
 <td>Communication Plans</td>
 <td>Failover & Failback Process</td>
 </tr>
-
 <tr>
 <td>Contingency Strategies</td>
 <td>DR Drills and Testing</td>
 </tr>
-
 <tr>
 <td>Alternate Work Locations</td>
 <td>RTO/RPO Objectives</td>
 </tr>
-
 </tbody></table>
-
 <h2>Appendix: RTO and RPO</h2>
 <p>Both RTO and RPO define recovery goals in case of a disruption or failure — especially in disaster recovery planning (DRP) and business continuity planning (BCP).</p>
 <h3>⏱️ RTO – Recovery Time Objective</h3>
@@ -157,45 +143,37 @@ export default function Page() {
 <th>⏱️ RTO – Recovery Time Objective</th>
 <th>🔁 RPO – Recovery Point Objective</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Definition</td>
 <td>Maximum downtime you can tolerate</td>
 <td>Maximum data loss (in time) you can tolerate</td>
 </tr>
-
 <tr>
 <td>Focus</td>
 <td>Recovery time</td>
 <td>Data loss tolerance</td>
 </tr>
-
 <tr>
 <td>Unit</td>
 <td>Time (e.g., minutes/hours)</td>
 <td>Time (e.g., seconds/minutes)</td>
 </tr>
-
 <tr>
 <td>Purpose</td>
 <td>Restore operations quickly</td>
 <td>Minimize data loss</td>
 </tr>
-
 <tr>
 <td>Example</td>
 <td>Resume within 2h</td>
 <td>Accept at most 5 minutes of data loss</td>
 </tr>
-
 <tr>
 <td>Used for</td>
 <td>Failover, automation</td>
 <td>Backup, replication, journaling</td>
 </tr>
-
 </tbody></table>
-
 <h3>📌 Visual Example:</h3>
 <p>If your last backup was at 12:00 PM and a crash happens at 2:00 PM:</p>
 <ul>
@@ -209,37 +187,31 @@ export default function Page() {
 <th>⏱️ Helps with RTO</th>
 <th>🔁 Helps with RPO</th>
 </tr></thead><tbody>
-
 <tr>
 <td>AWS Route 53 failover</td>
 <td>✅</td>
 <td></td>
 </tr>
-
 <tr>
 <td>GCP Cloud Load Balancer</td>
 <td>✅</td>
 <td></td>
 </tr>
-
 <tr>
 <td>AWS Backup / GCS Snapshots</td>
 <td></td>
 <td>✅ (automated snapshots)</td>
 </tr>
-
 <tr>
 <td>RDS Multi-AZ / Cloud SQL</td>
 <td>✅ (auto failover)</td>
 <td>✅ (real-time sync or backups)</td>
 </tr>
-
 <tr>
 <td>S3 Cross-region Replication</td>
 <td></td>
 <td>✅ (geo redundancy)</td>
 </tr>
-
 </tbody></table>
 </article>
   )

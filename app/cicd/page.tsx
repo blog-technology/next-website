@@ -10,8 +10,8 @@ export default function Page() {
 <li>Developer writes code on a local machine.</li>
 <li>Code is pushed to a shared repository (e.g., GitHub, GitLab).</li>
 <li>A CI server detects the change and:<ul>
-<li>Pulls the new code </li>
-<li>Builds the project </li>
+<li>Pulls the new code</li>
+<li>Builds the project</li>
 <li>Runs automated tests (unit, integration, linting, etc.)</li>
 </ul>
 </li>
@@ -19,9 +19,9 @@ export default function Page() {
 </ol>
 <h3>🎯 Goals of CI</h3>
 <ul>
-<li>Detect bugs early by testing every change </li>
+<li>Detect bugs early by testing every change</li>
 <li>Reduce integration issues (aka “it works on my machine” problems)</li>
-<li>Ensure the codebase is always in a working state </li>
+<li>Ensure the codebase is always in a working state</li>
 <li>Provide fast feedback to developers</li>
 </ul>
 <h3>🔧 Common CI Tools</h3>
@@ -29,35 +29,29 @@ export default function Page() {
 <th>Tool</th>
 <th>Description</th>
 </tr></thead><tbody>
-
 <tr>
 <td><b>Jenkins</b></td>
 <td>Highly configurable, open-source CI server</td>
 </tr>
-
 <tr>
 <td><b>GitHub Actions</b></td>
 <td>Integrated with GitHub; customizable workflows</td>
 </tr>
-
 <tr>
 <td><b>GitLab CI</b></td>
 <td>Built into GitLab; supports full DevOps cycle</td>
 </tr>
-
 <tr>
 <td><b>CircleCI</b></td>
 <td>Cloud-native CI/CD with fast performance</td>
 </tr>
-
 </tbody></table>
-
 <h3>📈 Example Use Case</h3>
 <p>You push a commit to your feature branch. A GitHub Action automatically:</p>
 <ul>
-<li>Installs dependencies </li>
-<li>Lints your code </li>
-<li>Runs unit tests </li>
+<li>Installs dependencies</li>
+<li>Lints your code</li>
+<li>Runs unit tests</li>
 <li>Builds the application</li>
 </ul>
 <p>If anything fails, the CI stops and notifies you, so you can fix it before merging to the main branch.</p>
@@ -75,14 +69,14 @@ export default function Page() {
 </ul>
 <h4>🔄 Flow:</h4>
 <ol>
-<li>Developer pushes code → CI runs tests </li>
-<li>If tests pass → CD builds and deploys to staging </li>
+<li>Developer pushes code → CI runs tests</li>
+<li>If tests pass → CD builds and deploys to staging</li>
 <li>A team member manually approves → code is deployed to production</li>
 </ol>
 <h4>✅ Benefits:</h4>
 <ul>
-<li>Faster, safer releases </li>
-<li>Reproducible builds </li>
+<li>Faster, safer releases</li>
+<li>Reproducible builds</li>
 <li>Better testing before production</li>
 </ul>
 <h3>⚙️ 2. Continuous Deployment (CD)</h3>
@@ -92,13 +86,13 @@ export default function Page() {
 </ul>
 <h4>🔄 Flow:</h4>
 <ol>
-<li>Code is committed → CI builds &amp; tests </li>
+<li>Code is committed → CI builds &amp; tests</li>
 <li>If all tests pass → CD automatically pushes to production</li>
 </ol>
 <h4>✅ Benefits:</h4>
 <ul>
-<li>Fastest delivery cycle </li>
-<li>Immediate feedback from real users </li>
+<li>Fastest delivery cycle</li>
+<li>Immediate feedback from real users</li>
 <li>Encourages small, safe, incremental updates</li>
 </ul>
 <h3>🔧 Example CD Tools</h3>
@@ -106,27 +100,22 @@ export default function Page() {
 <th>Tool</th>
 <th>Use Case</th>
 </tr></thead><tbody>
-
 <tr>
 <td><b>GitHub Actions</b></td>
 <td>Build → Test → Deploy</td>
 </tr>
-
 <tr>
 <td><b>GitLab CI/CD</b></td>
 <td>Full CI/CD pipeline in GitLab</td>
 </tr>
-
 <tr>
 <td><b>Argo CD</b></td>
 <td>GitOps deployment to Kubernetes</td>
 </tr>
-
 <tr>
 <td><b>Spinnaker</b></td>
 <td>Multi-cloud deployment</td>
 </tr>
-
 </tbody></table></article>
   )
 }

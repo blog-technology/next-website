@@ -25,7 +25,6 @@ export default function Page() {
 <td><b>Duration</b></td>
 <td><b>Description</b></td>
 </tr></thead><tbody>
-
 <tr>
 <td>Fix Length</td>
 <td>1.15 GB</td>
@@ -35,7 +34,6 @@ export default function Page() {
 <td>1 min 45 sec</td>
 <td>Full scan the table</td>
 </tr>
-
 <tr>
 <td>CSV</td>
 <td>975 MB</td>
@@ -45,7 +43,6 @@ export default function Page() {
 <td>1 min 12 sec</td>
 <td>Full scan the table</td>
 </tr>
-
 <tr>
 <td>Fix Length</td>
 <td>1.02 GB</td>
@@ -55,7 +52,6 @@ export default function Page() {
 <td>1 min 33 sec</td>
 <td>Filter by index on 1 field</td>
 </tr>
-
 <tr>
 <td>CSV</td>
 <td>863 MB</td>
@@ -65,7 +61,6 @@ export default function Page() {
 <td>1 min 3 sec</td>
 <td>Filter by index on 1 field</td>
 </tr>
-
 <tr>
 <td>Fix Length</td>
 <td>890 MB</td>
@@ -75,7 +70,6 @@ export default function Page() {
 <td>1 min 23 sec</td>
 <td>Filter by index on 1 field</td>
 </tr>
-
 <tr>
 <td>CSV</td>
 <td>764 MB</td>
@@ -85,7 +79,6 @@ export default function Page() {
 <td>55 sec</td>
 <td>Filter by index on 1 field</td>
 </tr>
-
 <tr>
 <td>Fix Length</td>
 <td>254 MB</td>
@@ -95,7 +88,6 @@ export default function Page() {
 <td>24 sec</td>
 <td>Filter by index on 1 field</td>
 </tr>
-
 <tr>
 <td>CSV</td>
 <td>220 M</td>
@@ -105,9 +97,7 @@ export default function Page() {
 <td>16 sec</td>
 <td>Filter by index on 1 field</td>
 </tr>
-
 </tbody></table>
-
 <h3>Batch jobs</h3>
 <p>Differ from online processing:</p>
 <ul>
@@ -144,7 +134,7 @@ export default function Page() {
 </ul>
 </li>
 </ol>
-<pre><code className="language-go">{`type User struct {
+<pre className="line-numbers"><code className="language-go">{`type User struct {
     Id          string     \`gorm:"column:id;primary_key" format:"%011s" length:"11"\`
     Username    string     \`gorm:"column:username" length:"10"\`
     Email       string     \`gorm:"column:email" length:"31"\`

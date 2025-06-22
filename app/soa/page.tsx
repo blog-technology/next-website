@@ -11,39 +11,31 @@ export default function Page() {
 <th>Feature</th>
 <th>Description</th>
 </tr></thead><tbody>
-
 <tr>
 <td><b>Services</b></td>
 <td>Self-contained components that perform specific tasks.</td>
 </tr>
-
 <tr>
 <td><b>Loose Coupling</b></td>
 <td>Services operate independently of each other.</td>
 </tr>
-
 <tr>
 <td><b>Interoperability</b></td>
 <td>Services can be built with different languages/platforms and still work together.</td>
 </tr>
-
 <tr>
 <td><b>Reusability</b></td>
 <td>Services are designed to be reused in different contexts.</td>
 </tr>
-
 <tr>
 <td><b>Standard Protocols</b></td>
 <td>Communication typically happens via HTTP, SOAP, REST, or message queues.</td>
 </tr>
-
 <tr>
 <td><b>Discoverability</b></td>
 <td>Services can be registered and discovered via a service registry.</td>
 </tr>
-
 </tbody></table>
-
 <h3>🧱 Example</h3>
 <p>In an e-commerce platform:</p>
 <ul>
@@ -73,33 +65,27 @@ export default function Page() {
 <th>SOA</th>
 <th>Microservices</th>
 </tr></thead><tbody>
-
 <tr>
 <td>Scope</td>
 <td>Enterprise-wide</td>
 <td>Application-specific</td>
 </tr>
-
 <tr>
 <td>Communication</td>
 <td>Often uses ESBs or SOAP</td>
 <td>Lightweight protocols like REST</td>
 </tr>
-
 <tr>
 <td>Governance</td>
 <td>Centralized</td>
 <td>Decentralized</td>
 </tr>
-
 <tr>
 <td>Deployment</td>
 <td>May be monolithic per service</td>
 <td>Independently deployed services</td>
 </tr>
-
 </tbody></table>
-
 <h3>📌 Use SOA When:</h3>
 <ul>
 <li>You&#39;re building a large enterprise system that needs integration across departments or legacy systems.</li>

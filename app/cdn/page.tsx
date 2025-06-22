@@ -12,9 +12,9 @@ export default function Page() {
 <h3>📦 What Does a CDN Deliver?</h3>
 <ul>
 <li>Static assets (images, CSS, JavaScript, fonts)</li>
-<li>Video/audio streaming </li>
+<li>Video/audio streaming</li>
 <li>Web pages (HTML, via caching)</li>
-<li>Software downloads </li>
+<li>Software downloads</li>
 <li>API responses (sometimes)</li>
 </ul>
 <h3>✅ Benefits of Using a CDN</h3>
@@ -22,35 +22,29 @@ export default function Page() {
 <th>Benefit</th>
 <th>Description</th>
 </tr></thead><tbody>
-
 <tr>
 <td>🌍 Faster loading</td>
 <td>Reduces latency by serving content from servers near the user</td>
 </tr>
-
 <tr>
 <td>🛡️ Increased security</td>
 <td>Protects against DDoS attacks, adds SSL/TLS, and hides the origin server</td>
 </tr>
-
 <tr>
 <td>📈 High availability</td>
 <td>Distributes traffic and handles failover if one server is down</td>
 </tr>
-
 <tr>
 <td>💰 Cost savings</td>
 <td>Reduces bandwidth usage on the origin server by caching static content</td>
 </tr>
-
 </tbody></table>
-
 <h3>🧠 Popular CDN Providers</h3>
 <ul>
-<li>Cloudflare </li>
-<li>Akamai </li>
-<li>Amazon CloudFront </li>
-<li>Google Cloud CDN </li>
+<li>Cloudflare</li>
+<li>Akamai</li>
+<li>Amazon CloudFront</li>
+<li>Google Cloud CDN</li>
 <li>Fastly</li>
 </ul>
 </article>

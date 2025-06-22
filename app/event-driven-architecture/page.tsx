@@ -8,29 +8,23 @@ export default function Page() {
 <th>Concept</th>
 <th>Description</th>
 </tr></thead><tbody>
-
 <tr>
 <td><b>Event</b></td>
 <td>A message or notification that something happened (e.g., "UserRegistered", "OrderPlaced").</td>
 </tr>
-
 <tr>
 <td><b>Producer</b></td>
 <td>The component that emits an event. It doesn't care who listens.</td>
 </tr>
-
 <tr>
 <td><b>Consumer</b></td>
 <td>The component that listens for and reacts to events.</td>
 </tr>
-
 <tr>
 <td><b>Event Bus/Broker</b></td>
 <td>Middleware (e.g., Kafka, RabbitMQ, NATS) that routes events from producers to consumers.</td>
 </tr>
-
 </tbody></table>
-
 <h3>🔁 Flow Example</h3>
 <p>In an e-commerce app:</p>
 <ol>
@@ -66,15 +60,15 @@ export default function Page() {
 <li><b>Brokers</b>: Kafka, RabbitMQ, NATS, AWS SNS/SQS, Google Pub/Sub</li>
 <li><b>Patterns</b>:<ul>
 <li>Pub/Sub (Publish/Subscribe)</li>
-<li>Event Sourcing </li>
+<li>Event Sourcing</li>
 <li>Command and Event handling</li>
 </ul>
 </li>
 </ul>
 <h3>📌 When to Use Event-Driven Architecture (EDA)</h3>
 <ul>
-<li>You need real-time updates (e.g., notification systems, stock tickers). </li>
-<li>Your system is distributed and modular. </li>
+<li>You need real-time updates (e.g., notification systems, stock tickers).</li>
+<li>Your system is distributed and modular.</li>
 <li>You want to enable high scalability and loose coupling.</li>
 </ul>
 </article>
