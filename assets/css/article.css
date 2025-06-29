@@ -90,6 +90,9 @@
   padding-right: 0;
 }
 
+.page-body > article > h1 {
+  margin-top: 16px;
+}
 .page-body > article > h2,
 .page-body > article > h3,
 .page-body > article > h4,
@@ -103,6 +106,9 @@
   margin-left: 16px;
   margin-right: 16px;
   margin-bottom: 16px;
+}
+.page-body > article > table {
+  max-width: calc(100% - 32px);
 }
 .page-body > article > ul {
   padding-left: 34px;
